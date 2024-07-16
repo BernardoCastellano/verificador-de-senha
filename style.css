@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --fonte-principal: "Roboto Mono", monospace;
+    --cor-funco-body: #180101;
+    --cor-fundo-container: #491515;
+    --cor-fundo-input: #180b0b;
+    --branco: #fff;
+    --preto: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-funco-body);
+    color: var(--branco);
+    font-family: var(--fonte-principal);
+}
+
+.titulo {
+    margin-top: 2rem;
+    font-size: 84px;
+    text-align: center;
+}
+
+.bloco {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 4rem;
+    width: 60%;
+    height: 550px;
+    display: flex;
+    background-color: var(--cor-fundo-container);
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 2px solid var(--branco);
+    border-radius: 15px 60px;
+}
+
+.separação {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.descricao {
+    font-size: 36px;
+}
+
+.campo-de-entrada {
+    height: 50px;
+    background-color: var(--cor-fundo-input);
+    border: none;
+    border-radius: 10px;
+    font-size: 24px;
+    color: var(--branco);
+    padding-left: 20px;
+}
+
+label {
+    cursor: pointer;
+}
+
+.container-btns {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.btn {
+    width: 300px;
+    height: 60px;
+    border: 3px solid var(--branco);
+    text-align: center;
+    font-size: 36px;
+    cursor: pointer;
+    border-radius: 20px 10px;
+    background-color: var(--cor-fundo-input);
+    color: var(--branco);
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #271111;
+}
+
+
+.container-2 {
+    font-size: 18px;
+    margin-top: 4rem;
+    width: 60%;
+    height: 550px;
+    display: flex;
+    background-color: var(--cor-fundo-container);
+    border: 2px solid var(--branco);
+    border-radius: 15px 60px;
+    padding: 20px;
+    flex-direction: column;
+    gap: 8px;
+}
+
+strong {
+    font-size: 24px;
+}
+
+.rodape {
+    display: flex;
+    margin: 50px 0 10px 20px;
+}
+
+.rodape__text {
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--branco);
+}
